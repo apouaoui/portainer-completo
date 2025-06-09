@@ -53,8 +53,6 @@ sudo docker volume create portainer_data
 
 # Sobe container do Portainer
 sudo docker run -d \
-  -p 9000:9000 \
-  -p 9443:9443 \
   --name=portainer \
   --restart=unless-stopped \
   -v /var/run/docker.sock:/var/run/docker.sock \
